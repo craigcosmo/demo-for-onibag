@@ -99,13 +99,13 @@ export default class Register extends React.Component {
 }
 ```
 
-The file name should be capitalized, so we know it's a react . This file will be put anywhere inside the directory app/component. How you want to organize folder structure inside app/component/ is entirely up to you.
+This file will be put within the directory app/component. How you want to organize sub folder is entirely up to you.
 
 ## Naming Convention
 
-Component names will start with capitalized letter and then fowllow with cammel case rule. Component file extension is `.js`
+Component names start with capitalized letter and then fowllow with cammel case rule. File extension is `.js`
 
-CSS file names are lowercased and follow cammel case rule, file extension will be `.scss` whether the content is sass or just css
+CSS names follow cammel case rule, file extension is `.scss`, regardless the content is sass or postcss or just css
 
 CSS class selectors are lowercased connected with hyphen 
 
@@ -113,14 +113,19 @@ Folder names follow cammel case rule
 
 Asset like images, fonts follow cammel case rule
 
-## flow to use redux in this app
+## Use redux in this app
 
-create action
-import acction file to mainAction.js
-create reducer
+Create action 
+
+Import acction file to mainAction.js
+
+Create reducer
+
 import reducer to mainReducer.js
-then map state to props
-in mainReducer.js, within the combineReducer function, add an entry with your reducer name
+
+Then map state to props
+
+In mainReducer.js, within the combineReducer function, add an entry with your reducer name
 
 ## How Add image asset to project
 
