@@ -1,0 +1,53 @@
+:global{
+	html {font-size: 62.5%; box-sizing: border-box;}
+	*, *:before, *:after {box-sizing: inherit;}
+	* {margin: 0;padding: 0;}
+	// should not set rem on the body refer issue 319623 on chromium google code
+	body > * {font-size: 1.4rem;font-family: 'Lato';font-weight: 400;}
+	h1,h2,h3,h4,h5,h6 {font-weight: 400}
+	h1{font-size: 2.4rem; }
+	h2{font-size: 2.2rem; }
+	h3{font-size: 2.0rem; }
+	h4{font-size: 1.8rem; }
+	h5{font-size: 1.6rem; }
+	h6{font-size: 1.4rem; }
+	a {color: #5DA0E7; cursor: pointer;}
+	a:hover{color: #5DA0E7}
+	button{border: none; outline: none;background: none; cursor: pointer;}
+	.ib {display: inline-block;}
+	.unselectable {-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none; user-select: none;}
+	.center {text-align: center;}
+	.right{text-align: right;}
+	.left{text-align: left;}
+	.vam{vertical-align: middle;}
+	.relative {position:relative}
+	.flex {display: flex}
+	.hide {display:none}
+	.must-hide{display: none !important }
+	.hidden{visibility: hidden;}
+	.capitalize {text-transform: capitalize;}
+	.uppercase {text-transform: uppercase;}
+	.cap::first-letter{text-transform: capitalize}
+	.clearfix::after {content: "";display: table;clear: both;}
+	.padding0{padding:0}
+	.margin0{margin:0}
+	.light {font-weight: 400}
+	.bold{font-weight: 500}
+	.table{display: table;}
+	.tcell {display: table-cell;}
+	.trow{display: table-row;}
+	.max-width{ width: 100%}
+	.max-height{height: 100%} 
+	.absolute-center{position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%)}
+	.vac {display: flex;flex-direction: column;justify-content: center; height: 100%;}
+	.flex1 {flex:1}
+	html, body {width: 100%;height: 100%;}
+	#app {width: 100%;height: 100%; position: relative;}
+	.page {width: 100%;height: 100%; position:relative;}
+	main {width: 100%;margin-right: auto; margin-left: auto;max-width: 1000px}
+	.pin-footer{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+}

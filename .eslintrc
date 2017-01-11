@@ -1,0 +1,113 @@
+{
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true,
+			"modules": true
+		}
+	},
+	"globals": {
+		"localStorage": true,
+		"google": true,
+		"process": true,
+		"__dirname":true,
+		"describe":true,
+		"require":true,
+		"module":true,
+		"it":true
+	},
+	"parser": "babel-eslint",
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"rules": {
+		"quote-props": ["off", "as-needed"],
+		"no-unused-vars": ["off"],
+		"no-mixed-spaces-and-tabs": "warn",
+		"jsx-quotes": ["warn", "prefer-double"],
+		"quotes": ["warn", "single"],
+		"comma-dangle": ["warn", "only-multiline"],
+		"no-unneeded-ternary": "off",
+		"semi": ["warn", "never"],
+		"no-underscore-dangle": "warn",
+		"no-cond-assign": "error",
+		"no-constant-condition" :"error",
+		"no-control-regex" : "error",
+		"no-dupe-args" : "error",
+		"no-dupe-keys" : "error",
+		"no-duplicate-case" : "error",
+		"no-extra-semi" : "error",
+		"no-func-assign" : "error",
+		"no-invalid-regexp" : "error",
+		"no-regex-spaces" : "error",
+		"no-sparse-arrays" : "error",
+		"no-unreachable" : "error",
+		"valid-typeof" : "error",
+		"no-undef": "error",
+		"no-spaced-func": "error",
+		"no-whitespace-before-property": "error",
+		"constructor-super": "error",
+		"no-const-assign": "error",
+		"no-this-before-super": "error",
+		"no-useless-computed-key": "error",
+		"no-var": "error",
+		"max-depth": ["error", 3],
+		"max-nested-callbacks": ["error", 3],
+		"max-params": ["error", 4],
+		"new-parens": "error",
+		"no-nested-ternary": "error",
+
+		"react/jsx-indent": ["warn", "tab"],
+		"react/jsx-indent-props": ["warn", "tab"],
+		"react/jsx-uses-react": "warn",
+		"react/jsx-uses-vars": "warn",
+		"react/forbid-component-props": "off",
+		"react/no-deprecated":"warn",
+		"react/no-did-mount-set-state": ["off", "disallow-in-func"],
+		"react/no-did-update-set-state": ["error", "disallow-in-func"],
+		"react/no-direct-mutation-state":"warn",
+		"react/no-unescaped-entities":"off",
+		"react/no-unused-prop-types": "warn",
+		"react/prefer-es6-class":"error",
+		"react/prop-types":"off",
+		"react/jsx-key":"warn",
+		"react/jsx-no-comment-textnodes":"error",
+		"react/jsx-no-duplicate-props": "error",
+		"react/require-render-return":"warn",
+		"react/style-prop-object":"warn",
+		"react/jsx-no-undef":"error",
+		"react/jsx-tag-spacing":["error",{"beforeSelfClosing":"allow"}],
+
+		"flowtype/boolean-style": [2,"boolean"],
+		"flowtype/define-flow-type": 1,
+		"flowtype/delimiter-dangle": [2,"never"],
+		"flowtype/generic-spacing": [2,"never"],
+		"flowtype/no-primitive-constructor-types": 2,
+		"flowtype/no-weak-types": 2,
+		"flowtype/object-type-delimiter": [2,"comma"],
+		"flowtype/require-parameter-type": 2,
+		"flowtype/require-return-type": [2,"always",{"annotateUndefined": "never"}],
+		"flowtype/require-valid-file-annotation": 2,
+		"flowtype/semi": [2,"always"],
+		"flowtype/space-after-type-colon": [2,"always"],
+		"flowtype/space-before-generic-bracket": [2,"never"],
+		"flowtype/space-before-type-colon": [2,"never"],
+		"flowtype/type-id-match": [2,"^([A-Z][a-z0-9]+)+Type$"],
+		"flowtype/union-intersection-spacing": [2,"always"],
+		"flowtype/use-flow-type": 1,
+		"flowtype/valid-syntax": 1,
+		
+		"mocha/no-exclusive-tests": "error"
+	},
+	"plugins": [
+		"react",
+		"mocha",
+		"flowtype"
+	],
+	"settings": {
+		"flowtype": {
+			"onlyFilesWithFlowAnnotation": true
+		}
+	}
+}
+
