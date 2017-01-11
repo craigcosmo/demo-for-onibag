@@ -36,21 +36,15 @@ npm run test
 
 This build command will generates files like bundle.js, bundle.css, index.html and assets. Those are store in `dist` folder ready to be shipped.
 
-This build will create  one js file and one css file
+This build will create  one js file and one css file - `bundle.css` and `bundle.js`
+
+Wepack will auto insert css and js link into index.html
 
 The css and js file name will have hash as query string
 
-Auto insert css and js link into index.html
+On each build commnad, the dist folder will be deleted, a new one with content will replace it.
 
-When develop in local, if developer change code in webpack.config.js, the dev ser will restart
-
-On each build commnad, the dist folder will be deleted, new content will be created to replace immediately
-
-On each run command, when the run progress complete, a browser window will open
-
-The dev server is webpack dev server instead of a dedicate local node express server
-
-All the asset in image folder and font folder will be copied into it's relavent folders in dist 
+All the asset in image folder and font folder will be copied into it's relavent folders in dist during the build
 
 ## Folder structure 
 
