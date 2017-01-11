@@ -70,7 +70,7 @@ All the asset in image folder and font folder will be copied into it's relavent 
 
 ## Golbal CSS Rules
 
-global rules are imported in page.js component. They are avaiable across the app
+global rules are imported in page.js component. They are available across the app
 
 
 ## How to create a component
@@ -121,7 +121,7 @@ Then map state to props
 
 In mainReducer.js, within the combineReducer function, add an entry with your reducer name
 
-## How Add image asset to project
+## How to add image asset to project
 
 Images asset is store in image folder. You can make sub folder to suit your need.
 
